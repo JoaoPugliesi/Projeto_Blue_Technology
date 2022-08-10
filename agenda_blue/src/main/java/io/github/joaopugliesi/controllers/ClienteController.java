@@ -24,7 +24,7 @@ import io.github.joaopugliesi.entity.Cliente;
 import io.github.joaopugliesi.service.ClienteService;
 
 @RestController
-@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/cliente")
 public class ClienteController {
 
