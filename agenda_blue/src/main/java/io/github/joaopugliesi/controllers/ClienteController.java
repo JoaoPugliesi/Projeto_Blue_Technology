@@ -76,7 +76,6 @@ public class ClienteController {
 		Cliente cliente = new Cliente();
 		BeanUtils.copyProperties(clienteDto, cliente);
 		cliente.setId(clienteOptional.get().getId());
-		cliente.setEmail(clienteOptional.get().getEmail());
 		return ResponseEntity.status(HttpStatus.OK).body(clienteService.save(cliente));
 
 	}
